@@ -1,1 +1,3 @@
 theme: jekyll-theme-midnight
+title: Singleton Clock
+description: A singleton ticking method.Works like a clock,Every second will show the time and the iteration number which will occur every second.
