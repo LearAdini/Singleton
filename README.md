@@ -1,4 +1,4 @@
-# Singleton Clock 
+# Singleton Clock Example
 A Singleton clock that will show an instance number increasing every 1 second.
 
 # The Class
