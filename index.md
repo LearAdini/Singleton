@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+# Singleton Clock Example
+A Singleton clock that will show an instance number increasing every 1 second.
 
-You can use the [editor on GitHub](https://github.com/LearAdini/Singleton/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# The Class
+First I create a class called SingleTonClock and give it its properties.
+The prop instance will be the class itself and will be used to get the iteration instance number, later.
+The counter prop will return the instance number and when its created.
+And in the constractor I set numOfInstance to 0.
+![0](https://user-images.githubusercontent.com/80118008/129447564-5ff11f56-e7cb-454d-b521-3c8c75455826.PNG)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Methods
+**● GetInstance**
 
-### Markdown
+Starting with the first method I create GetInstance and say if instance is null start lock on instance which is the new instance of type SingleTonClock , and set numOfInstance++ to get increasing number for each iteration, return instanace number.
+![4](https://user-images.githubusercontent.com/80118008/129447618-280c78aa-dde2-4e67-a378-c5fdb2366533.PNG)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**● tonClock**
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/LearAdini/Singleton/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Now I set the tonClock method which will run in a constant loop while (true) and give it a Thread.Sleep of one second.
+So now I define a variable type of SingleTonClock and use GetInstance method.And write to the screen the Clock instance number wich will increase each second and will show us when it was created(Counter prop)
+![1](https://user-images.githubusercontent.com/80118008/129447613-19005f70-d9c2-4a0d-99c9-ac72c71b3df3.PNG)
+# Main
+In main I define a variable called s1 which will be my Singleton clock and I will use the tonClock method
+![2](https://user-images.githubusercontent.com/80118008/129447659-00ac876c-1a28-452b-bb86-c1088829d331.PNG)
+# Result
+![3](https://user-images.githubusercontent.com/80118008/129447667-3d1c19e8-8c8f-495c-842c-43c98b2ad915.PNG)
