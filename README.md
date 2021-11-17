@@ -5,7 +5,8 @@ A Singleton clock that will show an instance number increasing every 1 second.
 First I create a class called SingleTonClock and give it its properties.
 The prop instance will be the class itself and will be used to get the iteration instance number, later.
 The counter prop will return the instance number and when its created.
-And in the constractor I set numOfInstance to 0.
+
+And in the constractor set numOfInstance to 0.
 ![0](https://user-images.githubusercontent.com/80118008/129447564-5ff11f56-e7cb-454d-b521-3c8c75455826.PNG)
 
 # Methods
